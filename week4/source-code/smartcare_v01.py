@@ -23,7 +23,8 @@ appointments = []
 def book_appointment(patient_name, practitioner_name, appointment_time):
     if not patient_name:
         raise ValueError("Patient name cannot be empty")
-
+    if not practitioner_name:
+        raise ValueError("Practitioner name cannot be empty")
     appointment = {
         "patient": patient_name,
         "practitioner": practitioner_name,
@@ -121,5 +122,13 @@ display_appointments()
 print("\nTest 4: None values")
 try:
     book_appointment(None, "Dr. John Doe", None)
+except ValueError as error:
+    print(error)
+
+# Part G - Test controlled improvement
+print("\nPart G: Blank practitioner name")
+
+try:
+    book_appointment("Grace Lee", "", "2024-07-20 5:00 PM")
 except ValueError as error:
     print(error)

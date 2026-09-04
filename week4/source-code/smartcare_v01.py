@@ -125,7 +125,7 @@ try:
 except ValueError as error:
     print(error)
 
-# Part G - Test controlled improvement
+# Part G - Test controlled Improvement
 print("\nPart G: Blank practitioner name")
 
 try:

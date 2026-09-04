@@ -22,6 +22,6 @@ The generated version used a list, dictionary and function. I ran the code to ve
 
 ## Evaluation and Verification
 
-I did not automatically accept the AI output as correct. I compared it with the human-written version and tested normal and unusual inputs. Testing showed that the AI alternative did not provide the same patient-name validation as the enhanced human version.
+I did not automatically accept the AI output as correct. I compared it with the Human-written version and tested normal and unusual inputs. Testing showed that the AI alternative did not provide the same patient-name validation as the enhanced human version.
 
 I kept the solution simple and made one controlled improvement to the human version by adding validation for an empty practitioner name. I tested this change to confirm that it produced the expected `ValueError`.
